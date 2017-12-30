@@ -1,12 +1,14 @@
-.fa {
-    float:right;
-    margin-right:0.2em;
-}
-
 footer > div > a {
     color:white;
+    float:right;
+    margin-right:0.4em;
 }
 
 footer > div > a:hover {
-    color:rgba(255,255,255,0.5);
+    color:rgba(255,255,255,0.75);
+}
+
+footer > div > p {
+    font-family:"Bradley Hand";
+    font-size:1.5em;
 }
