@@ -1,0 +1,47 @@
+/* 
+    Custom styles for the custom Navbar.
+*/
+
+.navbar{
+    font-family: "Bradley Hand";
+    font-size:1.4em;
+}
+
+/* Navbar BG. */
+.navbar-default{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Brand element. */
+.navbar-default .navbar-brand{
+    color:white;
+    font-size:1.1em;
+}
+
+/* Navbar non-active elements. */
+.navbar-default .navbar-nav > li > a{
+    color:rgba(255, 255, 255, 0.5);
+}
+
+/* Navbar non-active elements on hover. */
+.navbar-default .navbar-nav > li > a:hover {
+    color:rgba(255,255,255,0.75);
+}
+
+/* Navbar active element. */
+.navbar-default .navbar-nav > .active > a{
+    color:white;
+}
+
+/*
+@font-face {
+    font-family: 'YourFontName';
+    src: url('http://domain.com/fonts/font.ttf'); 
+} 
+*/
+
+/*
+.classname {
+    font-family: 'YourFontName';
+}
+*/
