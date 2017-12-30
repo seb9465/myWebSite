@@ -1,0 +1,12 @@
+.fa {
+    float:right;
+    margin-right:0.2em;
+}
+
+footer > div > a {
+    color:white;
+}
+
+footer > div > a:hover {
+    color:rgba(255,255,255,0.5);
+}
