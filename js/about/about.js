@@ -4,7 +4,8 @@ $(document).ready(function(){
         this.description = "";
         this.projectDetailsTitle = "";
         this.details = "";
-        this.pictureURL = "";
+        this.pictureBigSizeSRC = "";
+        this.pictureSmallSizeSRC = "";
     }
 
     var projectCollection = [];
@@ -14,6 +15,8 @@ $(document).ready(function(){
     var currentShownProject = new Project();
     currentShownProject.title = document.getElementById("projectTitle").innerHTML;
     currentShownProject.description = document.getElementById("projectDescription").innerHTML;
+    currentShownProject.pictureBigSizeSRC = document.getElementById("pictureBigSize").getAttribute('src');
+    console.log(currentShownProject.pictureBigSizeSRC);
 
     projectCollection[0] = currentShownProject;
 
@@ -21,23 +24,28 @@ $(document).ready(function(){
     var relatedProject1 = new Project();
     relatedProject1.title = "Related project 1";
     relatedProject1.description ="Related project 1 description";
+    relatedProject1.pictureBigSizeSRC = "http://placehold.it/750x500";
 
-    projectCollection[1] = relatedProject1;
+    projectCollection[1] = relatedProject1;                         // Adding the Related Project to the array.
 
     // Informations for the second related project.
     var relatedProject2 = new Project();
     relatedProject2.title = "Related project 2";
     relatedProject2.description ="Related project 2 description";
+    relatedProject1.pictureBigSizeSRC = "";
 
-    projectCollection[2] = relatedProject2;
+    projectCollection[2] = relatedProject2;                         // Adding the Related Project to the array.
 
 
+    // Starting Index for each of the Related Project squares.
     var relatedProject1Index = 1;
     var relatedProject2Index = 2;
 
     $("#relatedProject1").click(function(){
         document.getElementById("projectTitle").innerHTML = projectCollection[relatedProject1Index].title;
         document.getElementById("projectDescription").innerHTML = projectCollection[relatedProject1Index].description;
+        document.getElementById("pictureBigSize").setAttribute('src') = projectCollectio[relatedProject1Index].pictureBigSizeSRC;
+        document.getElementById("relatedProject1").setAttribute('src') = projectCollection[currentIndexProjectShown].pictureBigSizeSRC;
         var tmpIndex = relatedProject1Index;
         relatedProject1Index = currentIndexProjectShown;
         currentIndexProjectShown = tmpIndex;
