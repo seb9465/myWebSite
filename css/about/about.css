@@ -2,3 +2,6 @@ img {
     cursor: pointer;
 }
 
+#noCursorImage {
+    cursor: auto;
+}
