@@ -8,8 +8,10 @@ $(document).ready(function(){
         this.pictureSmallSizeSRC = "";
     }
 
+    // Array that will contain all of Related Projects.
     var projectCollection = [];
     var currentIndexProjectShown = 0;
+
 
     // Get the current shown project informations.
     var currentShownProject = new Project();
@@ -18,7 +20,8 @@ $(document).ready(function(){
     currentShownProject.pictureBigSizeSRC = document.getElementById("pictureBigSize").getAttribute('src');
     currentShownProject.pictureSmallSizeSRC = "../assets/about/robot_500_300.jpg";
 
-    projectCollection[0] = currentShownProject;
+    projectCollection[0] = currentShownProject;                     // Adding the Related Project to the array.
+
 
     // Informations for the first related project.
     var relatedProject1 = new Project();
@@ -28,6 +31,7 @@ $(document).ready(function(){
     relatedProject1.pictureSmallSizeSRC = "http://placehold.it/500x300";
 
     projectCollection[1] = relatedProject1;                         // Adding the Related Project to the array.
+
 
     // Informations for the second related project.
     var relatedProject2 = new Project();
@@ -43,6 +47,8 @@ $(document).ready(function(){
     var relatedProject1Index = 1;
     var relatedProject2Index = 2;
 
+    
+    // -------------- CLICK MANAGEMENT --------------------
     $("#relatedProject1").click(function(){
         document.getElementById("projectTitle").innerHTML = projectCollection[relatedProject1Index].title;
         document.getElementById("projectDescription").innerHTML = projectCollection[relatedProject1Index].description;
