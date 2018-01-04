@@ -27,9 +27,9 @@ $(document).ready(function(){
     // Informations for the first related project.
     var relatedProject1 = new Project();
     relatedProject1.title = "Polyphoto";
-    relatedProject1.description = "Committtee of the Association des Étudiants de Polytechnique (AEP)";
-    relatedProject1.details ="<li>Membre - Session A2017</li>" +
-                                    "<li>VP Sports - Session H2018</li>";
+    relatedProject1.description = "Committtee of the <i>Association des Étudiants de Polytechnique</i> (AEP)";
+    relatedProject1.details ="<li>Active member - Session A2017</li>" +
+                                    "<li>Sports director - Session H2018</li>";
     console.log(relatedProject1.details);
     relatedProject1.pictureBigSizeSRC = "http://placehold.it/750x500";
     relatedProject1.pictureSmallSizeSRC = "http://placehold.it/500x300";
