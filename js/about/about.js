@@ -17,6 +17,7 @@ $(document).ready(function(){
     var currentShownProject = new Project();
     currentShownProject.title = document.getElementById("projectTitle").innerHTML;
     currentShownProject.description = document.getElementById("projectDescription").innerHTML;
+    currentShownProject.details = document.getElementById("detailList").innerHTML;
     currentShownProject.pictureBigSizeSRC = document.getElementById("pictureBigSize").getAttribute('src');
     currentShownProject.pictureSmallSizeSRC = "../assets/about/robot_500_300.jpg";
 
@@ -25,8 +26,11 @@ $(document).ready(function(){
 
     // Informations for the first related project.
     var relatedProject1 = new Project();
-    relatedProject1.title = "Related project 1";
-    relatedProject1.description ="Related project 1 description";
+    relatedProject1.title = "Polyphoto";
+    relatedProject1.description = "Committtee of the Association des Étudiants de Polytechnique (AEP)";
+    relatedProject1.details ="<li>Membre - Session A2017</li>" +
+                                    "<li>VP Sports - Session H2018</li>";
+    console.log(relatedProject1.details);
     relatedProject1.pictureBigSizeSRC = "http://placehold.it/750x500";
     relatedProject1.pictureSmallSizeSRC = "http://placehold.it/500x300";
 
@@ -35,8 +39,9 @@ $(document).ready(function(){
 
     // Informations for the second related project.
     var relatedProject2 = new Project();
-    relatedProject2.title = "Related project 2";
+    relatedProject2.title = "Hackatown Polytechnique";
     relatedProject2.description ="Related project 2 description";
+    relatedProject2.details = "";
     relatedProject2.pictureBigSizeSRC = "http://placehold.it/750x500";
     relatedProject2.pictureSmallSizeSRC = "http://placehold.it/500x300";
 
@@ -53,7 +58,9 @@ $(document).ready(function(){
         document.getElementById("projectTitle").innerHTML = projectCollection[relatedProject1Index].title;
         document.getElementById("projectDescription").innerHTML = projectCollection[relatedProject1Index].description;
         document.getElementById("pictureBigSize").setAttribute('src', projectCollection[relatedProject1Index].pictureBigSizeSRC);
+        document.getElementById("detailList").innerHTML = projectCollection[relatedProject1Index].details;
         document.getElementById("relatedProject1").setAttribute('src', projectCollection[currentIndexProjectShown].pictureSmallSizeSRC);
+        
         var tmpIndex = relatedProject1Index;
         relatedProject1Index = currentIndexProjectShown;
         currentIndexProjectShown = tmpIndex;
@@ -63,7 +70,9 @@ $(document).ready(function(){
         document.getElementById("projectTitle").innerHTML = projectCollection[relatedProject2Index].title;
         document.getElementById("projectDescription").innerHTML = projectCollection[relatedProject2Index].description;
         document.getElementById("pictureBigSize").setAttribute('src', projectCollection[relatedProject2Index].pictureBigSizeSRC);
+        document.getElementById("detailList").innerHTML = projectCollection[relatedProject2Index].details;
         document.getElementById("relatedProject2").setAttribute('src', projectCollection[currentIndexProjectShown].pictureSmallSizeSRC);
+        
         var tmpIndex = relatedProject2Index;
         relatedProject2Index = currentIndexProjectShown;
         currentIndexProjectShown = tmpIndex;
