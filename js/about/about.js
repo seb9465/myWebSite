@@ -21,7 +21,7 @@ $(document).ready(function(){
     currentShownProject.pictureBigSizeSRC = document.getElementById("pictureBigSize").getAttribute('src');
     currentShownProject.pictureSmallSizeSRC = "../assets/about/robot_500_300.jpg";
 
-    projectCollection[0] = currentShownProject;                     // Adding the Related Project to the array.
+    projectCollection[0] = currentShownProject;                                                                 // Adding the Related Project to the array.
 
 
     // Informations for the first related project.
@@ -33,8 +33,8 @@ $(document).ready(function(){
     relatedProject1.pictureBigSizeSRC = "../assets/about/polyphoto_750_500.jpg";
     relatedProject1.pictureSmallSizeSRC = "../assets/about/polyphoto_500_300.jpg";
 
-    projectCollection[1] = relatedProject1;                         // Adding the Related Project to the array.
-    document.getElementById("relatedProject1").setAttribute('src', projectCollection[1].pictureSmallSizeSRC);
+    projectCollection[1] = relatedProject1;                                                                     // Adding the Related Project to the array.
+    document.getElementById("relatedProject1").setAttribute('src', projectCollection[1].pictureSmallSizeSRC);   // Fixing the image src of the related project 1.
 
 
     // Informations for the second related project.
@@ -42,10 +42,11 @@ $(document).ready(function(){
     relatedProject2.title = "Hackatown Polytechnique";
     relatedProject2.description ="Related project 2 description";
     relatedProject2.details = "";
-    relatedProject2.pictureBigSizeSRC = "http://placehold.it/750x500";
-    relatedProject2.pictureSmallSizeSRC = "http://placehold.it/500x300";
-
-    projectCollection[2] = relatedProject2;                         // Adding the Related Project to the array.
+    relatedProject2.pictureBigSizeSRC = "../assets/about/hackatown_750_500.jpg";
+    relatedProject2.pictureSmallSizeSRC = "../assets/about/hackatown_500_300.jpg";
+    
+    projectCollection[2] = relatedProject2;                                                                     // Adding the Related Project to the array.
+    document.getElementById("relatedProject1").setAttribute('src', projectCollection[2].pictureSmallSizeSRC);   // Fixing the image src of the related project 2.
 
 
     // Starting Index for each of the Related Project squares.
