@@ -30,7 +30,6 @@ $(document).ready(function(){
     relatedProject1.description = "Committtee of the <i>Association des Étudiants de Polytechnique</i> (AEP)";
     relatedProject1.details ="<li>Active member - Session A2017</li>" +
                                     "<li>Sports director - Session H2018</li>";
-    console.log(relatedProject1.details);
     relatedProject1.pictureBigSizeSRC = "http://placehold.it/750x500";
     relatedProject1.pictureSmallSizeSRC = "http://placehold.it/500x300";
 
