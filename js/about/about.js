@@ -8,6 +8,7 @@ $(document).ready(function(){
         this.pictureSmallSizeSRC = "";
     }
 
+    
     // Array that will contain all of Related Projects.
     var projectCollection = [];
     var currentIndexProjectShown = 0;
