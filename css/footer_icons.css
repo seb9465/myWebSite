@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'BradleyHand';
+    src: url('../fonts/BRADHITC.ttf');
+}
+
 footer > div > a {
     color:white;
     float:right;
@@ -9,6 +14,6 @@ footer > div > a:hover {
 }
 
 footer > div > p {
-    font-family:"Bradley Hand";
+    font-family:"BradleyHand";
     font-size:1.5em;
 }
