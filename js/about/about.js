@@ -44,9 +44,9 @@ $(document).ready(function(){
     relatedProject2.details = "";
     relatedProject2.pictureBigSizeSRC = "../assets/about/hackatown_750_500.jpg";
     relatedProject2.pictureSmallSizeSRC = "../assets/about/hackatown_500_300.jpg";
-    
+
     projectCollection[2] = relatedProject2;                                                                     // Adding the Related Project to the array.
-    document.getElementById("relatedProject1").setAttribute('src', projectCollection[2].pictureSmallSizeSRC);   // Fixing the image src of the related project 2.
+    document.getElementById("relatedProject2").setAttribute('src', projectCollection[2].pictureSmallSizeSRC);   // Fixing the image src of the related project 2.
 
 
     // Starting Index for each of the Related Project squares.
