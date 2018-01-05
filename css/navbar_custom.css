@@ -2,8 +2,13 @@
     Custom styles for the custom Navbar.
 */
 
+@font-face {
+    font-family: 'BradleyHand';
+    src: url('../fonts/BRADHITC.ttf'); 
+}
+
 .navbar{
-    font-family: "Bradley Hand";
+    font-family: "BradleyHand";
     font-size:1.4em;
 }
 
@@ -38,15 +43,5 @@
     color:white;
 }
 
-/*
-@font-face {
-    font-family: 'YourFontName';
-    src: url('http://domain.com/fonts/font.ttf'); 
-} 
-*/
 
-/*
-.classname {
-    font-family: 'YourFontName';
-}
-*/
+

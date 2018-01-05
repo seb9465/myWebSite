@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'BradleyHand';
+    src: url('../fonts/BRADHITC.ttf'); 
+}
+
+
 .carousel-caption{
-    font-family:"Bradley Hand";
+    font-family:"BradleyHand";
 }
