@@ -30,10 +30,11 @@ $(document).ready(function(){
     relatedProject1.description = "Committtee of the <i>Association des Étudiants de Polytechnique</i> (AEP)";
     relatedProject1.details ="<li>Active member - Session A2017</li>" +
                                     "<li>Sports director - Session H2018</li>";
-    relatedProject1.pictureBigSizeSRC = "http://placehold.it/750x500";
-    relatedProject1.pictureSmallSizeSRC = "http://placehold.it/500x300";
+    relatedProject1.pictureBigSizeSRC = "../assets/about/polyphoto_750_500.jpg";
+    relatedProject1.pictureSmallSizeSRC = "../assets/about/polyphoto_500_300.jpg";
 
     projectCollection[1] = relatedProject1;                         // Adding the Related Project to the array.
+    document.getElementById("relatedProject1").setAttribute('src', projectCollection[1].pictureSmallSizeSRC);
 
 
     // Informations for the second related project.
