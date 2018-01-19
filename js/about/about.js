@@ -18,7 +18,7 @@ $(document).ready(function(){
     var currentShownProject = new Project();
     currentShownProject.title = document.getElementById("projectTitle").innerHTML;
     currentShownProject.description = document.getElementById("projectDescription").innerHTML;
-    currentShownProject.details = document.getElementById("detailList").innerHTML;
+    currentShownProject.details = document.getElementById("projectDetails").innerHTML;
     currentShownProject.pictureBigSizeSRC = document.getElementById("pictureBigSize").getAttribute('src');
     currentShownProject.pictureSmallSizeSRC = "../assets/about/robot_500_300.jpg";
 
@@ -29,8 +29,11 @@ $(document).ready(function(){
     var relatedProject1 = new Project();
     relatedProject1.title = "Polyphoto";
     relatedProject1.description = "Committtee of the <i>Association des Étudiants de Polytechnique</i> (AEP)";
-    relatedProject1.details ="<li>Active member - Session A2017</li>" +
-                                    "<li>Sports director - Session H2018</li>";
+    relatedProject1.details =       "<h4 class=\"my-3\">Project Details</h4>" +
+                                    "<ul id=\"detailList\">" +
+                                        "<li>Active member - Session A2017</li>" +
+                                        "<li>Sports director - Session H2018</li>" +
+                                    "</ul>";
     relatedProject1.pictureBigSizeSRC = "../assets/about/polyphoto_750_500.jpg";
     relatedProject1.pictureSmallSizeSRC = "../assets/about/polyphoto_500_300.jpg";
 
@@ -42,7 +45,11 @@ $(document).ready(function(){
     var relatedProject2 = new Project();
     relatedProject2.title = "Hackatown Polytechnique";
     relatedProject2.description ="Related project 2 description";
-    relatedProject2.details = "";
+    relatedProject2.details =   "<h4 class=\"my-3\">Project Details</h4>" +
+                                "<ul id=\"detailList\">" +
+                                    "<li></li>" +
+                                    "<li></li>" +
+                                "</ul>";
     relatedProject2.pictureBigSizeSRC = "../assets/about/hackatown_750_500.jpg";
     relatedProject2.pictureSmallSizeSRC = "../assets/about/hackatown_500_300.jpg";
 
@@ -60,7 +67,7 @@ $(document).ready(function(){
         document.getElementById("projectTitle").innerHTML = projectCollection[relatedProject1Index].title;
         document.getElementById("projectDescription").innerHTML = projectCollection[relatedProject1Index].description;
         document.getElementById("pictureBigSize").setAttribute('src', projectCollection[relatedProject1Index].pictureBigSizeSRC);
-        document.getElementById("detailList").innerHTML = projectCollection[relatedProject1Index].details;
+        document.getElementById("projectDetails").innerHTML = projectCollection[relatedProject1Index].details;
         document.getElementById("relatedProject1").setAttribute('src', projectCollection[currentIndexProjectShown].pictureSmallSizeSRC);
         
         var tmpIndex = relatedProject1Index;
@@ -72,7 +79,7 @@ $(document).ready(function(){
         document.getElementById("projectTitle").innerHTML = projectCollection[relatedProject2Index].title;
         document.getElementById("projectDescription").innerHTML = projectCollection[relatedProject2Index].description;
         document.getElementById("pictureBigSize").setAttribute('src', projectCollection[relatedProject2Index].pictureBigSizeSRC);
-        document.getElementById("detailList").innerHTML = projectCollection[relatedProject2Index].details;
+        document.getElementById("projectDetails").innerHTML = projectCollection[relatedProject2Index].details;
         document.getElementById("relatedProject2").setAttribute('src', projectCollection[currentIndexProjectShown].pictureSmallSizeSRC);
         
         var tmpIndex = relatedProject2Index;
